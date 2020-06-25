@@ -10,7 +10,7 @@
         <!--Log In View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController storyboardIdentifier="LogInViewController" id="BYZ-38-t0r" customClass="LogInViewController" customModule="SignInWithAppleDemo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LogInViewController" id="BYZ-38-t0r" customClass="LogInViewController" customModule="SignInWithAppleID" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -109,7 +109,7 @@
         <!--Home View Controller-->
         <scene sceneID="b5X-Wn-4b7">
             <objects>
-                <viewController storyboardIdentifier="HomeViewController" id="5ib-EY-v9g" customClass="HomeViewController" customModule="SignInWithAppleDemo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="HomeViewController" id="5ib-EY-v9g" customClass="HomeViewController" customModule="SignInWithAppleID" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="WEW-bJ-FxD">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -169,22 +169,16 @@
                                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bHP-Cc-QAb">
-                                                <rect key="frame" x="10" y="132" width="59.5" height="24"/>
-                                                <fontDescription key="fontDescription" name="NotoSansOriya-Bold" family="Noto Sans Oriya" pointSize="17"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="First Name:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JIt-10-giu">
                                                 <rect key="frame" x="10" y="64" width="96" height="24"/>
                                                 <fontDescription key="fontDescription" name="NotoSansOriya-Bold" family="Noto Sans Oriya" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="Label" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r1w-LL-zdu">
-                                                <rect key="frame" x="89.5" y="132" width="264.5" height="24"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="sign in with applesign in with apple" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r1w-LL-zdu">
+                                                <rect key="frame" x="20" y="132" width="334" height="24"/>
                                                 <fontDescription key="fontDescription" name="NotoSansOriya" family="Noto Sans Oriya" pointSize="17"/>
-                                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <color key="textColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
@@ -200,17 +194,14 @@
                                             <constraint firstItem="jls-t9-3hD" firstAttribute="centerY" secondItem="JIt-10-giu" secondAttribute="centerY" id="Her-vg-rhi"/>
                                             <constraint firstItem="59W-eT-fRT" firstAttribute="leading" secondItem="FhT-ue-3HA" secondAttribute="trailing" constant="20" id="JyT-54-bqI"/>
                                             <constraint firstItem="1eN-FM-BWl" firstAttribute="leading" secondItem="t26-FD-CPl" secondAttribute="trailing" constant="20" id="MVO-B8-fWC"/>
-                                            <constraint firstItem="bHP-Cc-QAb" firstAttribute="leading" secondItem="HvD-ny-DaF" secondAttribute="leading" constant="10" id="QMo-uc-grz"/>
+                                            <constraint firstItem="r1w-LL-zdu" firstAttribute="top" secondItem="t26-FD-CPl" secondAttribute="bottom" constant="10" id="NA4-8i-QHh"/>
                                             <constraint firstAttribute="trailing" secondItem="59W-eT-fRT" secondAttribute="trailing" constant="10" id="TZI-LM-J5s"/>
-                                            <constraint firstItem="bHP-Cc-QAb" firstAttribute="top" secondItem="t26-FD-CPl" secondAttribute="bottom" constant="10" id="Vcv-1J-NvQ"/>
-                                            <constraint firstItem="r1w-LL-zdu" firstAttribute="leading" secondItem="bHP-Cc-QAb" secondAttribute="trailing" constant="20" id="ahg-ui-mhc"/>
                                             <constraint firstItem="JIt-10-giu" firstAttribute="top" secondItem="FhT-ue-3HA" secondAttribute="bottom" constant="20" id="bth-gB-eko"/>
                                             <constraint firstItem="FhT-ue-3HA" firstAttribute="top" secondItem="HvD-ny-DaF" secondAttribute="top" constant="20" id="g0p-eG-t57"/>
                                             <constraint firstItem="t26-FD-CPl" firstAttribute="top" secondItem="JIt-10-giu" secondAttribute="bottom" constant="10" id="h6k-zu-UM3"/>
                                             <constraint firstItem="59W-eT-fRT" firstAttribute="centerY" secondItem="FhT-ue-3HA" secondAttribute="centerY" id="qFC-f7-kAg"/>
-                                            <constraint firstItem="r1w-LL-zdu" firstAttribute="centerY" secondItem="bHP-Cc-QAb" secondAttribute="centerY" id="rIU-zI-ufX"/>
                                             <constraint firstItem="t26-FD-CPl" firstAttribute="leading" secondItem="HvD-ny-DaF" secondAttribute="leading" constant="10" id="rwI-Yx-LWJ"/>
-                                            <constraint firstAttribute="trailing" secondItem="bHP-Cc-QAb" secondAttribute="trailing" constant="294.5" id="sJu-JK-dN1"/>
+                                            <constraint firstItem="r1w-LL-zdu" firstAttribute="leading" secondItem="HvD-ny-DaF" secondAttribute="leading" constant="20" id="x1f-b4-Ze8"/>
                                             <constraint firstAttribute="trailing" secondItem="r1w-LL-zdu" secondAttribute="trailing" constant="10" id="xb8-6S-eQb"/>
                                         </constraints>
                                     </view>
