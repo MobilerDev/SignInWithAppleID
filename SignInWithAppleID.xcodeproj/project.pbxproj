@@ -7,22 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1543762B24A26D7F0020237C /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1543762A24A26D7F0020237C /* HomeViewController.swift */; };
+		1543762D24A26FCF0020237C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1543762C24A26FCF0020237C /* Main.storyboard */; };
+		1543762F24A270460020237C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1543762E24A270460020237C /* LaunchScreen.storyboard */; };
+		1543763124A272440020237C /* KeychainItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1543763024A272440020237C /* KeychainItem.swift */; };
+		1543763424A273E40020237C /* AuthenticationServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1543763324A273E40020237C /* AuthenticationServices.framework */; };
 		1586AEF7249805DA0078B6E7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1586AEF6249805DA0078B6E7 /* AppDelegate.swift */; };
 		1586AEF9249805DA0078B6E7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1586AEF8249805DA0078B6E7 /* SceneDelegate.swift */; };
-		1586AEFB249805DA0078B6E7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1586AEFA249805DA0078B6E7 /* ViewController.swift */; };
-		1586AEFE249805DA0078B6E7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1586AEFC249805DA0078B6E7 /* Main.storyboard */; };
+		1586AEFB249805DA0078B6E7 /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1586AEFA249805DA0078B6E7 /* LogInViewController.swift */; };
 		1586AF00249805DB0078B6E7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1586AEFF249805DB0078B6E7 /* Assets.xcassets */; };
-		1586AF03249805DB0078B6E7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1586AF01249805DB0078B6E7 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1543762A24A26D7F0020237C /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		1543762C24A26FCF0020237C /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		1543762E24A270460020237C /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1543763024A272440020237C /* KeychainItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeychainItem.swift; sourceTree = "<group>"; };
+		1543763324A273E40020237C /* AuthenticationServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AuthenticationServices.framework; path = System/Library/Frameworks/AuthenticationServices.framework; sourceTree = SDKROOT; };
+		156AA19E24980B84009BA4B7 /* SignInWithAppleID.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SignInWithAppleID.entitlements; sourceTree = "<group>"; };
 		1586AEF3249805DA0078B6E7 /* SignInWithAppleID.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SignInWithAppleID.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1586AEF6249805DA0078B6E7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1586AEF8249805DA0078B6E7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		1586AEFA249805DA0078B6E7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		1586AEFD249805DA0078B6E7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1586AEFA249805DA0078B6E7 /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
 		1586AEFF249805DB0078B6E7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		1586AF02249805DB0078B6E7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1586AF04249805DB0078B6E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -31,17 +38,27 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1543763424A273E40020237C /* AuthenticationServices.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1543763224A273E40020237C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1543763324A273E40020237C /* AuthenticationServices.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		1586AEEA249805DA0078B6E7 = {
 			isa = PBXGroup;
 			children = (
 				1586AEF5249805DA0078B6E7 /* SignInWithAppleID */,
 				1586AEF4249805DA0078B6E7 /* Products */,
+				1543763224A273E40020237C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,12 +73,15 @@
 		1586AEF5249805DA0078B6E7 /* SignInWithAppleID */ = {
 			isa = PBXGroup;
 			children = (
+				156AA19E24980B84009BA4B7 /* SignInWithAppleID.entitlements */,
 				1586AEF6249805DA0078B6E7 /* AppDelegate.swift */,
 				1586AEF8249805DA0078B6E7 /* SceneDelegate.swift */,
-				1586AEFA249805DA0078B6E7 /* ViewController.swift */,
-				1586AEFC249805DA0078B6E7 /* Main.storyboard */,
+				1586AEFA249805DA0078B6E7 /* LogInViewController.swift */,
+				1543762A24A26D7F0020237C /* HomeViewController.swift */,
+				1543763024A272440020237C /* KeychainItem.swift */,
+				1543762C24A26FCF0020237C /* Main.storyboard */,
 				1586AEFF249805DB0078B6E7 /* Assets.xcassets */,
-				1586AF01249805DB0078B6E7 /* LaunchScreen.storyboard */,
+				1543762E24A270460020237C /* LaunchScreen.storyboard */,
 				1586AF04249805DB0078B6E7 /* Info.plist */,
 			);
 			path = SignInWithAppleID;
@@ -125,9 +145,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1586AF03249805DB0078B6E7 /* LaunchScreen.storyboard in Resources */,
+				1543762F24A270460020237C /* LaunchScreen.storyboard in Resources */,
 				1586AF00249805DB0078B6E7 /* Assets.xcassets in Resources */,
-				1586AEFE249805DA0078B6E7 /* Main.storyboard in Resources */,
+				1543762D24A26FCF0020237C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,32 +158,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1586AEFB249805DA0078B6E7 /* ViewController.swift in Sources */,
+				1586AEFB249805DA0078B6E7 /* LogInViewController.swift in Sources */,
 				1586AEF7249805DA0078B6E7 /* AppDelegate.swift in Sources */,
+				1543763124A272440020237C /* KeychainItem.swift in Sources */,
 				1586AEF9249805DA0078B6E7 /* SceneDelegate.swift in Sources */,
+				1543762B24A26D7F0020237C /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		1586AEFC249805DA0078B6E7 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				1586AEFD249805DA0078B6E7 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		1586AF01249805DB0078B6E7 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				1586AF02249805DB0078B6E7 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		1586AF05249805DB0078B6E7 /* Debug */ = {
@@ -284,15 +287,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = SignInWithAppleID/SignInWithAppleID.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = LZD85Q5WB3;
+				DEVELOPMENT_TEAM = C2MNJ3B2E9;
 				INFOPLIST_FILE = SignInWithAppleID/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.SignInWithAppleID.SignInWithAppleID;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mobiler.SignInWithAppleID;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -302,15 +308,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = SignInWithAppleID/SignInWithAppleID.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = LZD85Q5WB3;
+				DEVELOPMENT_TEAM = C2MNJ3B2E9;
 				INFOPLIST_FILE = SignInWithAppleID/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.SignInWithAppleID.SignInWithAppleID;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mobiler.SignInWithAppleID;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
